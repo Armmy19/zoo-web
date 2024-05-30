@@ -1,0 +1,326 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: "Kanit", sans-serif;
+}
+
+.carousel-item {
+  height: 50vh;
+  min-height: 80px;
+  background: no-repeat center center scroll;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+.carouseliteme {
+  height: 40vh;
+  min-height: 80px;
+  background: no-repeat center center scroll;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+
+}
+.carouseliteme img {
+  width: 6em;
+  height: 6em;
+  box-shadow: 0px 0px 15px rgba(255, 255, 255, 0.4);
+  border-radius: 17%;
+}
+
+  .box-button {
+    font-size: 16px;
+    font-weight: '275';
+    background: linear-gradient(#02F4BD, #0075F4) padding-box, linear-gradient(to right, #0075F4, #02F4BD) border-box;
+    border: 2px solid transparent;
+  }
+.zoodetail {
+  height: 42vh;
+}
+.zoodetail>.zooanimal{
+  display: none;
+  height:100%;
+  position: relative;
+}
+.zoodetail>.zooanimal img{
+  display: none;
+  position: absolute;
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+}
+.zoodetail>.zooimg img{
+  height: 10em;
+  width: 10em;
+}
+.zooimg p {
+  line-height: 1.2;
+}
+
+.zooimg>.zooname {
+  font-size: 22px;
+  font-weight: 400;
+}
+.zooimg>.address,.tel {
+  font-size: 16px;
+  font-weight: 400;
+}
+.zooimg>.open {
+  font-size: 16px;
+}
+
+#KK,#CM,#KN,#NM,#UB,#SK {
+  position: relative;
+  z-index: -2;
+}
+#KK:after {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-image: url('../img/01kk-bg.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  height: 100%;
+  opacity: 0.1;
+  z-index: -1;
+}
+#CM:after {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 0;
+  right: 0;
+  background-image: url('../img/01cm-bg.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  height: 100%;
+  opacity: 0.15;
+  z-index: -1;
+}
+#KN:after {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-image: url('../img/01kn-bg.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  height: 100%;
+  opacity: 0.2;
+  z-index: -1;
+}
+#NM:after {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 0;
+  right: 0;
+  background-image: url('../img/01nm-bg.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  height: 100%;
+  opacity: 0.1;
+  z-index: -1;
+}
+#UB:after {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-image: url('../img/01ub-bg.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  height: 100%;
+  opacity: 0.25;
+  z-index: -1;
+}
+#SK:after {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 0;
+  right: 0;
+  background-image: url('../img/01sk-bg.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  height: 100%;
+  opacity: 0.3;
+  z-index: -1;
+}
+
+footer a:hover {
+  text-decoration: none;
+}
+
+  @media (min-width: 576px) {
+    .carousel-item {
+        height: 55vh;
+        min-height: 150px;
+      }
+    
+      .carouseliteme {
+        height: 35vh;
+        min-height: 100px;
+    
+      }
+      .carouseliteme img {
+        width: 6em;
+        height: 6em;
+        box-shadow: 0px 0px 15px rgba(255, 255, 255, 0.4);
+        border-radius: 17%;
+      }
+      .box-button {
+        font-size: 20px;
+        font-family: 'Kanit', sans-serif;
+        font-weight: '275';
+        background: linear-gradient(#02F4BD, #0075F4) padding-box, linear-gradient(to right, #0075F4, #02F4BD) border-box;
+        border: 2px solid transparent;
+      }
+      .zoodetail {
+        height: 35vh;
+      }
+      .zoodetail>.zooanimal {
+        display: block;
+        height: 100%;
+        position: relative;
+      }
+
+      .zoodetail>.zooanimal img {
+        display: block;
+        position: absolute;
+        object-fit: cover;
+        width: 100%;
+        height: 100%;
+      }
+      .zoodetail>.zooimg img {
+        height: 10em;
+        width: 10em;
+      }
+
+      .zooimg>.zooname {
+        font-size: 20px;
+        font-weight: 400;
+      }
+
+      .zooimg>.address,
+      .tel {
+        font-size: 16px;
+        font-weight: 400;
+      }
+
+      .zooimg>.open {
+        font-size: 16px;
+      }
+  }
+
+  @media (min-width: 768px) {
+  .carousel-item {
+      height: 93vh;
+      min-height: 250px;
+    }
+
+    .carouseliteme {
+      height: 50vh;
+      min-height: 150px;
+    }
+    .carouseliteme img {
+      width: 8em;
+      height: 8em;
+      box-shadow: 0px 0px 15px rgba(255, 255, 255, 0.4);
+      border-radius: 17%;
+    }
+    .box-button {
+      font-size: 30px;
+      font-family: 'Kanit', sans-serif;
+      font-weight: '275';
+      background: linear-gradient(#02F4BD, #0075F4) padding-box, linear-gradient(to right, #0075F4, #02F4BD) border-box;
+      border: 2px solid transparent;
+    }
+    .zoodetail {
+      height: 50vh;
+    }
+    .zoodetail>.zooimg img {
+      height: 12em;
+      width: 12em;
+    }
+    .zooimg>.zooname {
+      font-size: 26px;
+      font-weight: 400;
+    }
+
+    .zooimg>.address,
+    .tel {
+      font-size: 20px;
+      font-weight: 400;
+    }
+
+    .zooimg>.open {
+      font-size: 20px;
+    }
+    
+  }
+
+  @media (min-width: 992px) {
+    .carousel-item {
+      height: 93vh;
+      min-height: 350px;
+    }
+
+    .carouseliteme {
+      height: 50vh;
+      min-height: 150px;
+
+    }
+    .carouseliteme img {
+      width: 10em;
+      height: 10em;
+      box-shadow: 0px 0px 15px rgba(255, 255, 255, 0.4);
+      border-radius: 17%;
+    }
+    .box-button {
+      font-size: 35px;
+      font-family: 'Kanit', sans-serif;
+      font-weight: '275';
+      background: linear-gradient(#02F4BD, #0075F4) padding-box, linear-gradient(to right, #0075F4, #02F4BD) border-box;
+      border: 2px solid transparent;
+    }
+    .zoodetail {
+      height: 60vh;
+    }
+    .zoodetail>.zooimg img {
+      height: 15em;
+      width: 15em;
+    }
+    .zooimg>.zooname {
+      font-size: 30px;
+      font-weight: 400;
+    }
+
+    .zooimg>.address,
+    .tel {
+      font-size: 24px;
+      font-weight: 400;
+    }
+
+    .zooimg>.open {
+      font-size: 24px;
+    }
+  }
