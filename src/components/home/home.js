@@ -110,10 +110,8 @@ function Home() {
                 >
                     <Navbar />
                     {loading ? (
-                        <div className="containar py-5 text-center">
-                            <div className="containar py-5 alert alert-danger" role="alert">
-                                กำหลังโหลดข้อมมูล.....
-                            </div>
+                        <div className="containar text-center">
+                                <span class="loader">Load&nbsp;ng</span>
                         </div>
                     ) : (
 

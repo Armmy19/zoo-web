@@ -60,10 +60,15 @@ function Homezoo() {
     ];
 
     useEffect(() => {
+        const myHeaders = new Headers();
+        myHeaders.append("Content-Type", "application/json");
+        myHeaders.append("Access-Control-Allow-Origin", "*");
+
         const requestOptions = {
             method: "GET",
-            mode: "cors", // กำหนดโหมดการร้องขอเป็น 'cors'
-            redirect: "follow"
+            headers: myHeaders,
+            redirect: "follow",
+           
         };
 
         fetch("https://addpay.net/api/v1/zoo/e-member/all-zoo", requestOptions)
@@ -92,10 +97,8 @@ function Homezoo() {
                 <div className="mt-3" style={{ textAlign: 'center', color: 'black', fontSize: 24, fontFamily: 'Kanit', fontWeight: '275', wordWrap: 'break-word' }}>BUY ZOO TICKET</div>
                 <img style={{}} src={zoo002} alt="Card image cap" />
                 {loading ? (
-                    <div className="containar py-5 text-center">
-                        <div class="containar py-5 alert alert-danger" role="alert">
-                            กำหลังโหลดข้อมมูล.....
-                        </div>
+                    <div className="containar text-center">
+                      <span class="loader">Load&nbsp;ng</span>
                     </div>
                 ) : (
 
@@ -141,6 +144,7 @@ function Homezoo() {
                         </div>
                     </div>
                 )}
+
             </section>
         </div>
     );
